@@ -13,6 +13,24 @@ function Header() {
     let container = document.querySelector('.header-container');
 
     const header = document.createElement('div');
+    container.appendChild(header);
+    header.classList.add('header');
+
     const date = document.createElement('span');
-    
+    header.appendChild(date);
+    date.classList.add('date');
+    date.textContent = 'March 28, 2019';
+
+    const title = document.createElement('h1');
+    title.classList.add('h1')
+    title.textContent = 'Lambda Times';
+    header.appendChild(title);
+
+    const temp = document.createElement('span');
+    temp.classList.add('temp')
+    temp.textContent = '98°';
+    header.appendChild(temp);
+
 }
+
+Header();
